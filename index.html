@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBS Info Monitor</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, "Microsoft YaHei", sans-serif;
+            background: #f5f7fa;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 60px 20px;
+        }
+        h1 {
+            font-size: 28px;
+            color: #1a1a2e;
+            margin-bottom: 8px;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 40px;
+        }
+        .cards {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 700px;
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            width: 320px;
+            text-decoration: none;
+            color: inherit;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            transition: all 0.2s;
+            border: 1px solid #eee;
+        }
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+            border-color: #4a90d9;
+        }
+        .card-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1a1a2e;
+            margin-bottom: 12px;
+        }
+        .card-meta {
+            font-size: 13px;
+            color: #999;
+            margin-bottom: 16px;
+        }
+        .card-action {
+            font-size: 14px;
+            color: #4a90d9;
+            font-weight: 500;
+        }
+        .footer {
+            margin-top: 60px;
+            font-size: 12px;
+            color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <h1>DBS Info Monitor</h1>
+    <div class="subtitle">最后发布: 2026-03-10 10:23:07</div>
+    <div class="cards">
+
+        <a href="nmpa.html" class="card">
+            <div class="card-title">NMPA 医疗器械审批监控</div>
+            <div class="card-meta">数据更新: 2026-03-10 09:49</div>
+            <div class="card-action">点击查看 &rarr;</div>
+        </a>
+
+        <a href="guawangjia.html" class="card">
+            <div class="card-title">DBS 挂网价监控</div>
+            <div class="card-meta">数据更新: 2026-03-10 09:47</div>
+            <div class="card-action">点击查看 &rarr;</div>
+        </a>
+
+    </div>
+    <div class="footer">Powered by GitHub Pages</div>
+</body>
+</html>
