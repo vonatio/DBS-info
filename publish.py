@@ -30,7 +30,7 @@ GITHUB_USER = "vonatio"
 HTML_SOURCES = {
     "nmpa": r"D:\Claude\NMPA\3.0\result_latest.html",
     "guawangjia": r"D:\Claude\dbs_windows-guawangjia\result.html",
-    "xiaohongshu-dashboard": r"D:\Claude\html\xiaohongshu-dashboard.html",
+    "xiaohongshu-dashboard": r"D:\Claude\html-dashboard\xiaohongshu-dashboard.html",
 }
 
 # GitHub Pages 地址
