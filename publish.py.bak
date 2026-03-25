@@ -30,7 +30,6 @@ GITHUB_USER = "vonatio"
 HTML_SOURCES = {
     "nmpa": r"D:\Claude\NMPA\3.0\result_latest.html",
     "guawangjia": r"D:\Claude\dbs_windows-guawangjia\result.html",
-    "xiaohongshu-dashboard": r"D:\Claude\html\xiaohongshu-dashboard.html",
 }
 
 # GitHub Pages 地址
@@ -121,12 +120,7 @@ def generate_index(items):
 
     cards = ""
     for item in items:
-        LABELS = {
-            "nmpa": "NMPA 医疗器械审批监控",
-            "guawangjia": "DBS 挂网价监控",
-            "xiaohongshu-dashboard": "「强迫之家」小红书运营Dashboard",
-        }
-        label = LABELS.get(item["name"], item["name"])
+        label = "NMPA 医疗器械审批监控" if item["name"] == "nmpa" else "DBS 挂网价监控"
         cards += f'''
         <a href="{item['file']}" class="card">
             <div class="card-title">{label}</div>
